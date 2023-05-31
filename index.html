@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Random shop</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://unpkg.com/98.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link ref="icon" href="/images/icons/green-line.png">
+</head>
+
+<body>
+    <header>
+        <hr class="rainbow">
+        <img class="shop-logo" src="images/logos/logo2.png">
+        <hr class="rainbow">
+    </header>
+
+    <div class="window shop-window">
+
+        <div class="title-bar">
+            <div class="title-bar-text shop-icon">shop.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="filter-box">
+            <div class="filter-field">
+                <label style="padding-right: 2px;">Show by type:</label>
+                <select id="select-type" autocomplete="off">
+                    <option> All </option>
+                    <option> Type #1 </option>
+                    <option> Type #2 </option>
+                </select>
+            </div>
+
+            <div class="filter-field">
+                <label style="padding-right: 2px;">Sort by:</label>
+                <select id="select-sort" autocomplete="off">
+                    <option value="0" selected> ~NONE~ </option>
+                    <option value="1"> Price - Highest </option>
+                    <option value="2"> Price - Lowest </option>
+                    <option value="3"> Rating - Highest </option>
+                    <option value="4"> Rating - Lowest </option>
+                </select>
+            </div>
+
+            <div class="filter-field">
+                <input type="checkbox" id="example1">
+                <label style="padding-right: 2px;" for="example1">Show favourites</label>
+            </div>
+        </div>
+
+        <div class="shop-items-window">
+            <ul class="shop-products" id="products">
+                <li class="shop-product" id="loading">
+                    <div class="card">
+                        <div class="shop-product-image" id="shop-preview" style='background-image: url("");'>
+                        </div>
+                        <div class="shop-product-description">
+                            <h2 class="name">~Name~</h2>
+                            <p class="price">P. 999</p>
+                            <div class="shop-item-buttons">
+                                <button>Add to favourites</button>
+                                <button>Add to cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="window hidden  item-preview" id="item-window">
+        <div class="title-bar">
+            <div class="title-bar-text item-icon">item_window.exe</div>
+            <div class="title-bar-controls">
+                <button id="close-preview" aria-label="Close"></button>
+            </div>
+        </div>
+
+        <div class="window-body item-window">
+            <div class="image" style="text-align: center;">
+                <span class="imgframe"><img id="preview-img"
+                        src="https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_-2.jpg"></span>
+            </div>
+            <div class=" description">
+                <div class="text">
+                    <p class="title" id="preview-name"> Name </p>
+                    <p id="preview-description">Bla bla</p>
+                    <p class="stock" id="preview-stock">Price: 50$</p>
+                </div>
+                <div class="buttons">
+                    <button style="float: left">Add to cart</button><button style="float: right">Add to
+                        favourite</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+    <div class="window cart-window hidden" id="cart">
+        <div class="title-bar">
+            <div class="title-bar-text cart-icon">cart:_10_items_100$_total.exe</div>
+            <div class="title-bar-controls">
+                <button aria-label="Minimize" id="cart-minimize"></button>
+            </div>
+        </div>
+        <div class="window-body cart-field">
+            <ul class="cart-items-list" id="cart-items-list">
+
+
+                <li class="cart-item">
+                    <div class="cart-line">
+                        <!-- <div class="cart-line-element item-number">1</div> -->
+                        <div class="cart-line-element item-number" style="font-weight: bold;">N.</div>
+                        <div class="cart-line-element item-name">item_name item_name item_name item_name item_name
+                            item_name item_name item_name item_name item_name item_name item_name item_name item_name
+                            item_name v</div>
+                        <div class="cart-line-element item-price-total" style="font-weight: bold;">100$</div>
+                        <div class="title-bar-controls item-delete">
+                            <button aria-label="Close"></button>
+                        </div>
+                    </div>
+                </li>
+
+
+            </ul>
+        </div>
+
+        <div class="cart-total">
+            <div class="cart-total-element" style="display: flex; flex-direction: row;">
+                <p>Total:</p>
+                <p style="font-weight: bold; margin-inline: 10px;">1000$</p>
+            </div>
+            <div class="cart-total-element"><button>Checkout!</button></div>
+        </div>
+    </div>
+
+
+
+
+    <div class="botbar">
+        <button class="start"><span>Start</span></button>
+        <button class="shop active"><span class="app">shop.exe</span></button>
+        <button class="cart" id="cart-botbar"><span class="app" id="botbar-cart-text">Cart: 1$</span></button>
+        <button class="item" id="item-botbar"><span class="app">item_name.exe</span></button>
+        <p class="time">00:00 PM</p>
+    </div>
+
+
+    <script src="/js/cosmetic/shop/shop-fetcher.js" defer></script>
+    <script src="/js/cosmetic/shop/shop-filters.js" defer></script>
+    <script src="/js/cosmetic/shop/shop-preview.js" defer></script>
+    <script src="/js/cosmetic/cart/cart-control.js" defer></script>
+    <script src="js/cosmetic/cart/cart-items.js" defer></script>
+</body>
+
+</html>
+
+<!-- Everything you saw up there was inspired in some ways by https://joelgc.com/ -->
+<!-- Some code was copypasted. If something works - why bother to make it yourself -->
+<!-- Also [https://unpkg.com/98.css] stylesheet was heavily modified (in index.css LULE) bcs vanilla version sucks big stinky ass -->
+<!--Was added/made/modified in 98.css: 
+            Window icon support
+            Functional botbar with icons and shit 
+            Windows js functionality (hide/show/etc (How about to make them draggable?))  
+            Other little improvements I forgot to mention -->
