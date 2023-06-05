@@ -4,7 +4,7 @@
 
 Shop API used in this project: https://fakestoreapi.com/
 
-Everything you will see in this website was inspired in some ways by this particular piece of art: https://joelgc.com/.
+Everything you will see in this website was inspired in some ways by this thing: https://joelgc.com/.
 Some code was copypasted. If something works - why bother to make it yourself?
 Also w98 stylesheet [https://unpkg.com/98.css] was heavily modified (in index.css LULE) bcs vanilla version sucks big stinky ass.
 
@@ -14,13 +14,16 @@ Was added/made/modified in 98.css:
 - Windows js functionality (hide/show/etc (How about to make them draggable?))  
 - Other little improvements I already forgot about
 
-<hr><hr>
+<hr>
+<hr>
 
 ## TO-DO
 
 ### GENERAL
 
 - [ ] Make own version of 98.css with all changes i made in index.css
+
+<hr>
 
 ### FUNCTIONALITY
 
@@ -64,7 +67,8 @@ Was added/made/modified in 98.css:
 
 - [ ] If you press minimize button in cart while item preview is opened - both will close
 
-<hr><hr>
+<hr>
+<hr>
 
 ## Deployment
 
