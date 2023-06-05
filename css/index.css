@@ -301,18 +301,20 @@ hr.rainbow {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    flex: 0 0 75%
+    flex: 0 0 65%
 }
 
 .cart-item .item-quantity {
-    flex: 0 0 15%
+    flex: 0 0 5%
 }
+
+
 
 .cart-item .item-price-total {
     flex: 0 0 10%
 }
 
-.cart-item .item-delete {
+.cart-item .item-button {
     flex: 0 0 5%;
     margin-block: 0 auto;
     padding-top: 8px;
@@ -403,3 +405,24 @@ span.app {
     justify-content: center;
     font-size: 11px;
 }
+
+
+.button-plus {
+    margin-left: 10px;
+    background-image: url("/images/icons/plus.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+}
+
+.button-minus {
+    margin-left: -2px;
+    background-image: url("/images/icons/minus.svg");
+    background-repeat: no-repeat;
+    background-position: top 3px left 4px;
+}
+
+
+
+
+
+/* send help */

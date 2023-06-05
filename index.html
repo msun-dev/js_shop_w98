@@ -29,16 +29,14 @@
             <div class="filter-field">
                 <label style="padding-right: 2px;">Show by type:</label>
                 <select id="select-type" autocomplete="off">
-                    <option> All </option>
-                    <option> Type #1 </option>
-                    <option> Type #2 </option>
+                    <option value="all"> all </option>
                 </select>
             </div>
 
             <div class="filter-field">
                 <label style="padding-right: 2px;">Sort by:</label>
                 <select id="select-sort" autocomplete="off">
-                    <option value="0" selected> ~NONE~ </option>
+                    <option value="0" selected> No sorting </option>
                     <option value="1"> Price - Highest </option>
                     <option value="2"> Price - Lowest </option>
                     <option value="3"> Rating - Highest </option>
@@ -93,8 +91,8 @@
                     <p class="stock" id="preview-stock">Price: 50$</p>
                 </div>
                 <div class="buttons">
-                    <button style="float: left">Add to cart</button><button style="float: right">Add to
-                        favourite</button>
+                    <button onclick="" style="float: center" id="preview-addcart">Add to cart</button>
+                    <!-- <button onclick="" style="float: right">Add to favourite</button> -->
                 </div>
             </div>
         </div>
@@ -106,7 +104,7 @@
 
     <div class="window cart-window hidden" id="cart">
         <div class="title-bar">
-            <div class="title-bar-text cart-icon">cart:_10_items_100$_total.exe</div>
+            <div class="title-bar-text cart-icon" id="cart-title">cart:_10_items_.exe</div>
             <div class="title-bar-controls">
                 <button aria-label="Minimize" id="cart-minimize"></button>
             </div>
@@ -122,7 +120,7 @@
         <div class="cart-total">
             <div class="cart-total-element" style="display: flex; flex-direction: row;">
                 <p>Total:</p>
-                <p style="font-weight: bold; margin-inline: 10px;">1000$</p>
+                <p style="font-weight: bold; margin-inline: 10px;" id="cart-total">0$</p>
             </div>
             <div class="cart-total-element"><button>Checkout!</button></div>
         </div>
@@ -134,7 +132,7 @@
     <div class="botbar">
         <button class="start"><span>Start</span></button>
         <button class="shop active"><span class="app">shop.exe</span></button>
-        <button class="cart" id="cart-botbar"><span class="app" id="botbar-cart-text">Cart: 1$</span></button>
+        <button class="cart" id="cart-botbar"><span class="app" id="botbar-cart-text">Cart: 0$</span></button>
         <button class="item" id="item-botbar"><span class="app">item_name.exe</span></button>
         <p class="time">00:00 PM</p>
     </div>

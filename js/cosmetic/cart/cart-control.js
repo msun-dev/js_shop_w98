@@ -28,7 +28,8 @@ document.getElementById('cart-botbar').onclick = function () {
 
 
 
-// DOESNT WORK :<
+// cart animation. doesnt work 
+//
 // function plink() {
 //     var ofs = 0;
 //     var el = document.getElementById('cart-botbar');
