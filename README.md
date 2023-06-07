@@ -22,6 +22,7 @@ Was added/made/modified in 98.css:
 ### GENERAL
 
 - [ ] Make own version of 98.css with all changes i made in index.css
+- [ ] Rewrite website using VUE framework
 
 <hr>
 
@@ -36,6 +37,7 @@ Was added/made/modified in 98.css:
 - [x] 'Favourites' support
 - [x] Local storage for 'Favourites'
 - [ ] Favourites and type filter don't work well together. Fix it! 
+I should take list of shop products buy shop-product class and only visible ones
  
 ### Cart:
 
