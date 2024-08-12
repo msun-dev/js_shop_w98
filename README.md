@@ -15,6 +15,15 @@ Was added/made/modified in 98.css:
 - Other little improvements I already forgot about
 
 <hr>
+
+## Previews
+
+**1** - Main screen:
+<img src="/previews/preview_1.png">
+
+**2** - Screen with item preview and cart opened:
+<img src="/previews/preview_2.png">
+
 <hr>
 
 ## TO-DO
